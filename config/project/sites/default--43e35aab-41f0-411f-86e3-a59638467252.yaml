@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: 'Spicy Test'
+primary: true
+siteGroup: 82f4b08d-ecc0-4036-af72-2dfcea5d7309
+sortOrder: 1

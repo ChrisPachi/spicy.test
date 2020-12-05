@@ -1,0 +1,17 @@
+dateModified: 1607139058
+email:
+  fromEmail: chris.coinbox@gmail.com
+  fromName: 'Spicy Test'
+  transportType: craft\mail\transportadapters\Sendmail
+system:
+  edition: solo
+  live: true
+  name: 'Spicy Test'
+  schemaVersion: 3.5.13
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
