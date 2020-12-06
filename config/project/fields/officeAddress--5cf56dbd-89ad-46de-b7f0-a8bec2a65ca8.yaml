@@ -1,0 +1,18 @@
+contentColumnType: string(1200)
+fieldGroup: 5fb30d35-ce91-4ed2-a043-0a0d090e0af0
+handle: officeAddress
+instructions: 'Office address.'
+name: 'Office Address'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 300
+  code: ''
+  columnType: null
+  initialRows: '3'
+  multiline: '1'
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

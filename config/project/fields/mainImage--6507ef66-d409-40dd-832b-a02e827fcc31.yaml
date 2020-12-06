@@ -1,0 +1,32 @@
+contentColumnType: string
+fieldGroup: c32665f2-7427-4547-8f98-3ea5ab6ce351
+handle: mainImage
+instructions: 'Main image, for display on home page. Recommended size 1480 x 1082.'
+name: 'Main image'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:67bf9c86-03b7-4ff5-b70d-e122ed45dafb'
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: '1'
+  selectionLabel: 'Choose image'
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:67bf9c86-03b7-4ff5-b70d-e122ed45dafb'
+  singleUploadLocationSubpath: ''
+  source: null
+  sources: '*'
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: large
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

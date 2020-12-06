@@ -1,0 +1,18 @@
+contentColumnType: string(400)
+fieldGroup: 5fb30d35-ce91-4ed2-a043-0a0d090e0af0
+handle: siteDescription
+instructions: 'Global site description.'
+name: 'Site Description'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 100
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
