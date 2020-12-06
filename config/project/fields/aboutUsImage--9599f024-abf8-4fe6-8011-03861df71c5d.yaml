@@ -11,12 +11,12 @@ settings:
     - image
   defaultUploadLocationSource: 'volume:67bf9c86-03b7-4ff5-b70d-e122ed45dafb'
   defaultUploadLocationSubpath: ''
-  limit: ''
+  limit: '1'
   localizeRelations: false
   previewMode: full
   restrictFiles: '1'
   selectionLabel: ''
-  showSiteMenu: false
+  showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   singleUploadLocationSource: 'volume:1a0d8658-95f6-46ad-9ec4-2587b0625c78'

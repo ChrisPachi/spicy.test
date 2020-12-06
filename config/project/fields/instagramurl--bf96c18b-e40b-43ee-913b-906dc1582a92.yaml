@@ -1,6 +1,6 @@
 contentColumnType: string(400)
 fieldGroup: 5fb30d35-ce91-4ed2-a043-0a0d090e0af0
-handle: instagramurl
+handle: instagramUrl
 instructions: 'Instagram URL'
 name: 'Instagram URL'
 searchable: false

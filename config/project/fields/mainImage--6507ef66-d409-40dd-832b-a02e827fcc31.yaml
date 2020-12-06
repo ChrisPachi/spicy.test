@@ -22,7 +22,8 @@ settings:
   singleUploadLocationSource: 'volume:67bf9c86-03b7-4ff5-b70d-e122ed45dafb'
   singleUploadLocationSubpath: ''
   source: null
-  sources: '*'
+  sources:
+    - 'volume:67bf9c86-03b7-4ff5-b70d-e122ed45dafb'
   targetSiteId: null
   useSingleFolder: false
   validateRelatedElements: false

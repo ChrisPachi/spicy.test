@@ -1,0 +1,60 @@
+{% extends "_layout" %}
+
+{% block content %}
+
+	<section>
+
+		<div class="banner-items">
+
+			<p>(top banner images and info)</p>
+
+		</div>
+
+	</section>
+
+	<section>
+
+		<div class="about">
+
+			<h1>{{ entry.homePageAboutHeading }}</h1>
+
+			<p>{{ entry.homePageAboutText }}</p>
+
+			{% if entry.homePageAboutImages|length %}
+				{% set thumb = { 
+					mode: 'crop', width: 120, height: 120, quality: 90 
+				} %}
+				<ul>
+				{% for image in entry.homePageAboutImages.all() %}
+					<li>
+						<img src="{{ image.getUrl(thumb) }}" alt="{{ image.title }}" />
+					</li>
+				{% endfor %}
+				</ul>
+			{% endif %}
+
+		</div>
+
+	</section>
+
+	<section>
+
+		<div class="tours-packages">
+
+			<h1>Tours & Packages</h1>
+
+			{% include "_partials/_tours-carousel" %}
+
+		</div>
+
+	</section>
+
+	<section>
+
+		<h1>Ready to start your adventure?</h1>
+
+		<p>Start by picking your desired <a href="#">activity</a>, <a href="#">destination</a>, <a href="#">package</a> or <a href="#">contact us</a> and we'll tailor something really special that perfectly suits your needs</p>
+
+	</section>
+
+{% endblock %}

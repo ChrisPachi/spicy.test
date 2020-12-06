@@ -1,0 +1,23 @@
+<p>(tours carousel)</p>
+
+{% set tours = craft.entries.section('toursPackages').all() %}
+
+{% block list %}
+
+<ul>
+{% for tour in tours %}
+	<li>
+
+		<h3><a href="{{ tour.url }}">{{ tour.title }}</a></h3>
+
+		<p>{{ tour.numberOfDays }} Days / {{ tour.numberOfNights }} Nights</p>
+		
+		<p>{{ tour.description }}</p>
+
+	</li>
+
+{% endfor %}
+
+</ul>
+
+{% endblock %}

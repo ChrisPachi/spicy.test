@@ -1,0 +1,32 @@
+contentColumnType: string
+fieldGroup: c9cbaf89-ac8d-4f35-9217-a85381376c9a
+handle: homePageAboutImages
+instructions: 'Images for the about us section of the home page.'
+name: 'Home Page About Images'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds: null
+  defaultUploadLocationSource: 'volume:67bf9c86-03b7-4ff5-b70d-e122ed45dafb'
+  defaultUploadLocationSubpath: ''
+  limit: ''
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: ''
+  selectionLabel: ''
+  showSiteMenu: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:67bf9c86-03b7-4ff5-b70d-e122ed45dafb'
+  singleUploadLocationSubpath: ''
+  source: null
+  sources:
+    - 'volume:1a0d8658-95f6-46ad-9ec4-2587b0625c78'
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: large
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

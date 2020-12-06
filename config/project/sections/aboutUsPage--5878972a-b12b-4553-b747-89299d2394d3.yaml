@@ -6,6 +6,6 @@ siteSettings:
   43e35aab-41f0-411f-86e3-a59638467252:
     enabledByDefault: true
     hasUrls: true
-    template: _singles/about-us
-    uriFormat: about-us-page
+    template: pages/about-us
+    uriFormat: about-us
 type: single
