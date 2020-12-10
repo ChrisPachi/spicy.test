@@ -8,4 +8,6 @@ $ npm install -d
 $ gulp
 ```
 
-Gulp watches craft templates and scripts.js. Using tailwind so there are no custom csss files.
+Gulp watches craft templates and scripts.js. 
+
+Using [tailwind](https://tailwindcss.com/) so there are no custom csss files.
