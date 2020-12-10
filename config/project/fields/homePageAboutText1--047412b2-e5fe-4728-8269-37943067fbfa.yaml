@@ -1,0 +1,18 @@
+contentColumnType: string(2400)
+fieldGroup: c9cbaf89-ac8d-4f35-9217-a85381376c9a
+handle: homePageAboutText1
+instructions: 'About text for home page.'
+name: 'Home Page About Text 1'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 600
+  code: ''
+  columnType: null
+  initialRows: '6'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

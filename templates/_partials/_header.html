@@ -1,19 +1,11 @@
 <header>
+	
+	<div class="hidden md:block">
+		{% include "_partials/_header-desktop" %}
+	</div>
 
-	<a href="#">Activities</a>
-
-	<a href="#">Places</a>
-
-	<a href="#">Packages</a>
-
-	<a href="/">(Logo)</a>
-
-	<a href="/about-us">About Us</a>
-
-	<a href="#">Faq</a>
-
-	<a href="#">Blog</a>
-
-	<a href="#">Contact</a>
+	<div class="block md:hidden">
+		{% include "_partials/_header-mobile" %}
+	</div>
 
 </header>

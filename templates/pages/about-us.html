@@ -1,13 +1,27 @@
 {% extends "_layout" %}
 
 {% block content %}
+	
+	<div class="h-screen grid grid-cols-1 text-center">
 
-	{% if entry.aboutUsImage|length %}
-		{% for image in entry.aboutUsImage.all() %}
-			<img src="{{ image.url }}" alt="{{ image.title }}" />
-		{% endfor %}
-	{% endif %}
+		<div class="absolute inset-0 bg-black opacity-40"></div>
+		<div class="flex bg-cover bg-center" style="
+		{% set image = entry.aboutUsImage.first() %}
 
-	<p>{{ entry.aboutUs }}</p>
+			{% if image %}
+				background-image: url({{ image.url }})
+			{% endif %}
+		">
+			<div class="m-auto z-10 pt-20 md:pt-14 w-2/3 text-beige-light text:sm md:text-xl">
+
+				<h2 class="text-beige-light pb-5">
+					About Branch Out Adventures
+				</h2>
+				<p>{{ entry.aboutUs }}</p>
+
+			</div>
+		</div>
+
+	</div>
 
 {% endblock %}

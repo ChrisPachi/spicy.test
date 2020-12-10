@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 5fb30d35-ce91-4ed2-a043-0a0d090e0af0
+handle: twitterUrl
+instructions: ''
+name: 'Twitter URL'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

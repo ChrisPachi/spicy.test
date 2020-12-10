@@ -1,23 +1,42 @@
-<p>(tours carousel)</p>
-
-{% set tours = craft.entries.section('toursPackages').all() %}
+{% set tours = craft.entries.section('toursPackages').order('title asc') %}
 
 {% block list %}
 
-<ul>
-{% for tour in tours %}
-	<li>
+<div class="relative">
 
-		<h3><a href="{{ tour.url }}">{{ tour.title }}</a></h3>
+	<div class="tours-carousel-dots absolute block w-full bottom-12 z-50 px-16"></div>
+	<div class="tours-carousel relative grid grid-cols-1 text-beige-light">
 
-		<p>{{ tour.numberOfDays }} Days / {{ tour.numberOfNights }} Nights</p>
-		
-		<p>{{ tour.description }}</p>
+		{% for tour in tours %}
 
-	</li>
+			<div class="w-screen h-carousel relative bg-cover bg-center  pt-20" 
+			style="
+				{% set image = tour.mainImage.first() %}
 
-{% endfor %}
+				{% if image %}
+					background-image: url({{ image.url }})
+				{% endif %}
+			">
+				<div class="absolute left-0 top-0 w-full h-full bg-black opacity-40 z-0"></div>
 
-</ul>
+				<div class="absolute left-0 px-16 top-0 w-full h-full z-0">
+
+					<p class="font-sourcecodepro uppercase text-xs pt-80 pb-4">
+						{{ tour.numberOfDays }} Days / {{ tour.numberOfNights }} Nights
+					</p>
+					<p class="font-staatliches text-6xl pb-4">
+						<a href="{{ tour.url }}">{{ tour.title }}</a>
+					</p>
+					<a class="inline-block p-4 mb-28 bg-russet-light" href="#">
+						Explore Details &#8594;
+					</a>
+
+				</div>
+
+			</div>
+
+		{% endfor %}
+
+	</div>
 
 {% endblock %}

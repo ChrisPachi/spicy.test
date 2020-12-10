@@ -4,56 +4,52 @@
 
 	<section>
 
-		<div class="banner-items">
+		<div class="hidden md:block">
+			{% include "_partials/_front-sheet-desktop" %}
+		</div>
 
-			<p>(top banner images and info)</p>
-
+		<div class="block md:hidden">
+			{% include "_partials/_front-sheet-mobile" %}
 		</div>
 
 	</section>
 
 	<section>
 
-		<div class="about">
+		<div class="h-auto grid grid-rows-2 grid-cols-1 md:grid-cols-2 md:grid-rows-1">
 
-			<h1>{{ entry.homePageAboutHeading }}</h1>
+			<div class="block my-10 md:my-auto px-10 md:px-44">
+				<h2>{{ entry.homePageAboutHeading }}</h2>
+				<p class="pt-10 text-charcoal">{{ entry.homePageAboutText1 }}</p>
+				<p class="text-charcoal">&emsp;&emsp;{{ entry.homePageAboutText2 }}</p>
+			</div>
 
-			<p>{{ entry.homePageAboutText }}</p>
+			<div class="relative block -my-10 md:my-auto mx-auto md:mx-0 py-10 md:py-40 w-2/3">
+				<img src="img/home-about-image.png" alt="{{ entry.homePageAboutHeading }}" />
+				<img class="absolute block inset-y-0 md:inset-y-20 inset-x-3/4 w-40 w-40" src="img/branchout-badge.svg" />
+			</div>
 
-			{% if entry.homePageAboutImages|length %}
-				{% set thumb = { 
-					mode: 'crop', width: 120, height: 120, quality: 90 
-				} %}
-				<ul>
-				{% for image in entry.homePageAboutImages.all() %}
-					<li>
-						<img src="{{ image.getUrl(thumb) }}" alt="{{ image.title }}" />
-					</li>
-				{% endfor %}
-				</ul>
-			{% endif %}
+		</div>
 
+		<div class="hidden md:block">
+			{% include "_partials/_icon-carousel-desktop" %}
+		</div>
+
+		<div class="block pt-28 md:hidden">
+			{% include "_partials/_icon-carousel-mobile" %}
 		</div>
 
 	</section>
 
 	<section>
 
-		<div class="tours-packages">
+		<div class="pt-20">
 
-			<h1>Tours & Packages</h1>
+			<h2 class="py-10 px-10 md:px-44">Tours & Packages</h3>
 
 			{% include "_partials/_tours-carousel" %}
 
 		</div>
-
-	</section>
-
-	<section>
-
-		<h1>Ready to start your adventure?</h1>
-
-		<p>Start by picking your desired <a href="#">activity</a>, <a href="#">destination</a>, <a href="#">package</a> or <a href="#">contact us</a> and we'll tailor something really special that perfectly suits your needs</p>
 
 	</section>
 
