@@ -147,5 +147,6 @@
 ul.slick-dots {
 	display: flex;
 	justify-content: center;
+    list-style-type: none;
 }
 
