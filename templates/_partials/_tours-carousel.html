@@ -4,7 +4,7 @@
 
 <div class="relative">
 
-	<div class="tours-carousel-dots absolute block w-full bottom-12 z-50 px-16"></div>
+	<div class="tours-carousel-dots absolute block w-auto bottom-12 z-50 px-16"></div>
 	<div class="tours-carousel relative grid grid-cols-1 text-beige-light">
 
 		{% for tour in tours %}
@@ -21,7 +21,7 @@
 
 				<div class="absolute left-0 px-16 top-0 w-full h-full z-0">
 
-					<p class="font-sourcecodepro uppercase text-xs pt-80 pb-4">
+					<p class="font-sourcecodepro uppercase text-xs pt-64 md:pt-80 pb-4">
 						{{ tour.numberOfDays }} Days / {{ tour.numberOfNights }} Nights
 					</p>
 					<p class="font-staatliches text-6xl pb-4">

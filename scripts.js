@@ -19,10 +19,10 @@ $().ready(function() {
 		    height: "toggle"
 		});
 	});
-
 	$('.mobile-menu-close').click(function() {
 		$('.mobile-menu').hide();
 	});
+
 	/* main carousel */
 	$('.tours-carousel').slick({ 
 		dots: true,

@@ -7,7 +7,7 @@
  * and browsersync for convenience - also bundles up jquery stuff and any custom js
  **/
  
-const { watch } = require('gulp');
+const { dest, src, task, watch } = require('gulp');
 const uglify = require('gulp-uglify');
 const rename = require('gulp-rename');
 const concat = require('gulp-concat');
@@ -20,12 +20,18 @@ function css(cb) {
 
 	// this is not purging? tailwind handles it? double check this
 
-	return gulp.src(
+	return gulp.src([
 		'./styles.css'
-	).pipe(postcss([
+	])
+	.pipe(postcss([
 		require('tailwindcss'),
 		require('autoprefixer')
 	]))
+	.pipe(purgecss({
+		content: ["./templates/**/*.html"],
+		defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
+	}))
+	.pipe(concat('styles.css'))
 	.pipe(gulp.dest('./web/css/'))
 	.pipe(browserSync.stream());
 
@@ -49,6 +55,7 @@ function scripts(cb) {
 	cb();
 }
 
+exports.css = css;
 exports.default = function() {
 
 	browserSync.init({
