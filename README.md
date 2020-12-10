@@ -1,5 +1,5 @@
 # spicy[web]
-Test Project for Job Application
+Test Project for Developer Job Application
 
 ## + craft cms dev kit using tailwind
 Setup [craft](https://craftcms.com/docs/3.x/installation.html) with [nitro](https://craftcms.com/docs/nitro/installation.html)
