@@ -1,4 +1,4 @@
-contentColumnType: smallint(3)
+contentColumnType: smallint(4)
 fieldGroup: c32665f2-7427-4547-8f98-3ea5ab6ce351
 handle: numberOfDays
 instructions: 'How many days the package includes.'
@@ -7,7 +7,7 @@ searchable: false
 settings:
   decimals: 0
   defaultValue: '1'
-  max: '100'
+  max: '1000'
   min: '0'
   prefix: ''
   previewCurrency: ''

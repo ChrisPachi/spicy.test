@@ -88,10 +88,6 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 Add the correct font weight in Edge and Safari.
 */
 
-b {
-  font-weight: bolder;
-}
-
 /**
 1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 2. Correct the odd 'em' font sizing in all browsers.
@@ -125,33 +121,14 @@ Forms
 2. Remove the margin in Firefox and Safari.
 */
 
-button,
-input,
-select {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
-}
-
 /**
 Remove the inheritance of text transform in Edge and Firefox.
 1. Remove the inheritance of text transform in Firefox.
 */
 
-button,
-select { /* 1 */
-  text-transform: none;
-}
-
 /**
 Correct the inability to style clickable types in iOS and Safari.
 */
-
-button,
-[type='button'] {
-  -webkit-appearance: button;
-}
 
 /**
 Remove the inner border and padding in Firefox.
@@ -219,27 +196,10 @@ p {
   margin: 0;
 }
 
-button {
-  background-color: transparent;
-  background-image: none;
-}
-
 /**
  * Work around a Firefox/IE bug where the transparent `button` background
  * results in a loss of the default `button` focus styles.
  */
-
-button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-}
-
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 
 /**
  * Tailwind custom reset styles
@@ -320,23 +280,6 @@ img {
   border-style: solid;
 }
 
-input::-moz-placeholder {
-  color: #9ca3af;
-}
-
-input:-ms-input-placeholder {
-  color: #9ca3af;
-}
-
-input::placeholder {
-  color: #9ca3af;
-}
-
-button,
-[role="button"] {
-  cursor: pointer;
-}
-
 h1,
 h2,
 h4 {
@@ -362,14 +305,6 @@ a {
  * normalize.css.
  */
 
-button,
-input,
-select {
-  padding: 0;
-  line-height: inherit;
-  color: inherit;
-}
-
 /**
  * Use the configured 'mono' font family for elements that
  * are expected to be rendered with a monospace font, falling
@@ -386,8 +321,7 @@ select {
  */
 
 img,
-svg,
-object {
+svg {
   display: block;
   vertical-align: middle;
 }
@@ -641,6 +575,10 @@ h4 {
   margin-bottom: -2.5rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -659,10 +597,6 @@ h4 {
 
 .p-0 {
   padding: 0px;
-}
-
-.p-1 {
-  padding: 0.25rem;
 }
 
 .p-4 {
@@ -711,6 +645,10 @@ h4 {
 .py-40 {
   padding-top: 10rem;
   padding-bottom: 10rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
 }
 
 .pr-3 {
@@ -818,10 +756,6 @@ h4 {
   bottom: 3rem;
 }
 
-.resize {
-  resize: both;
-}
-
 * {
   --tw-shadow: 0 0 #0000;
 }
@@ -886,10 +820,6 @@ h4 {
 
 .align-middle {
   vertical-align: middle;
-}
-
-.visible {
-  visibility: visible;
 }
 
 .w-3 {
@@ -984,23 +914,6 @@ h4 {
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
-.transform {
-  --tw-translate-x: 0;
-  --tw-translate-y: 0;
-  --tw-rotate: 0;
-  --tw-skew-x: 0;
-  --tw-skew-y: 0;
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
-  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.transition {
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 @-webkit-keyframes spin {
   to {
     transform: rotate(360deg);
@@ -1051,6 +964,10 @@ h4 {
 }
 
 @media (min-width: 768px) {
+
+  .md\:bg-repeat-x {
+    background-repeat: repeat-x;
+  }
 
   .md\:block {
     display: block;
@@ -1154,117 +1071,4 @@ h4 {
   .md\:grid-rows-1 {
     grid-template-rows: repeat(1, minmax(0, 1fr));
   }
-}
-/* Slider */
-
-.slick-slider
-{
-  position: relative;
-  display: block;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -khtml-user-select: none;
-  touch-action: pan-y;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.slick-list
-{
-  position: relative;
-  display: block;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-.slick-list:focus
-{
-  outline: none;
-}
-
-.slick-list.dragging
-{
-  cursor: pointer;
-  cursor: hand;
-}
-
-.slick-slider .slick-track,
-.slick-slider .slick-list
-{
-  transform: translate3d(0, 0, 0);
-}
-
-.slick-track
-{
-  position: relative;
-  top: 0;
-  left: 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.slick-track:before,
-.slick-track:after
-{
-  display: table;
-  content: '';
-}
-
-.slick-track:after
-{
-  clear: both;
-}
-
-.slick-loading .slick-track
-{
-  visibility: hidden;
-}
-
-.slick-slide
-{
-  display: none;
-  float: left;
-  height: 100%;
-  min-height: 1px;
-}
-
-.slick-slide img
-{
-  display: block;
-}
-
-.slick-slide.slick-loading img
-{
-  display: none;
-}
-
-.slick-slide.dragging img
-{
-  pointer-events: none;
-}
-
-.slick-initialized .slick-slide
-{
-  display: block;
-}
-
-.slick-loading .slick-slide
-{
-  visibility: hidden;
-}
-
-.slick-vertical .slick-slide
-{
-  display: block;
-  height: auto;
-  border: 1px solid transparent;
-}
-
-.slick-arrow.slick-hidden {
-  display: none;
 }
