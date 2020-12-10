@@ -1,7 +1,9 @@
-# spicy.test
-Spicy[web] Test Project for Job Application
+# spicy[web]
+Test Project for Job Application
 
-# craft cms local dev files + gulp + tailwind
-& gulp (watch changes)
-$ gulp css (purge tailwind)
-$ gulp js (crunch js files)
+# local craft cms dev kit
+```sh
+$ composer install
+$ npm install -d
+$ gulp
+```
