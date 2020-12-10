@@ -1,7 +1,7 @@
 # spicy[web]
 Test Project for Job Application
 
-# local craft cms dev kit
+# local craft cms dev kit using tailwind
 Setup [nitro](https://craftcms.com/docs/nitro/installation.html)
 ```sh
 $ composer install
