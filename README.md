@@ -7,4 +7,3 @@ $ composer install
 $ npm install -d
 $ gulp
 ```
-... should work :P
